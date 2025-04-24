@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Glass+Antiqua&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="AADESIGNSLOGO.png" alt="Logo" width="100">
+        </div>
+        <div class="nav-list">
+            <ul>
+                
+                <a href="index.html"><li><h4>HOME</h4></li></a>
+                <a href="midterm.html"><li><h4>MIDTERM</h4></li></a>
+                <a href="finals.html"><li><h4>FINAL</h4></li></a>
+                <a href="contacts.html"><li><button class="button-class">CONTACT</button></li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-form">
+        <h2>LET’S GET <span class="highlight">CONNECTED!</span></h2>
+        <form action="/submit_form" method="post">
+          <fieldset class="fdesign">
+            <legend>NAME</legend>
+            <input type="text" name="name" class="inside-box" placeholder="Enter your name" required>
+          </fieldset>
+      
+          <div class="tw-column">
+            <fieldset class="fdesign half">
+              <legend>CONTACT NUMBER</legend>
+              <input type="tel" name="number" class="inside-box" placeholder="Enter your number" required>
+            </fieldset>
+      
+            <fieldset class="fdesign half">
+              <legend>EMAIL</legend>
+              <input type="email" name="email" class="inside-box" placeholder="Enter your email" required>
+            </fieldset>
+          </div>
+      
+          <fieldset class="message">
+            <legend>MESSAGE</legend>
+            <textarea name="message" class="inside-box" placeholder="Enter your message" required></textarea>
+          </fieldset>
+      
+          <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+      </section>
+      
+    
+</body>
+</html>
