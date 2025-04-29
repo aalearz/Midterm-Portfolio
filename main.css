@@ -852,6 +852,11 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 800px) {
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
   /* Navbar - Burger Menu */
   .navbar {
     margin: 0;
@@ -916,21 +921,36 @@ input:focus, textarea:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
   }
   
   .image {
+    margin-top: 50px;
     margin-bottom: 20px;
   }
   
   .name-main {
-    line-height: 1.2;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
   }
   
+  .name-main h1 {
+    font-size: 4rem;
+  }
+  .name-main h2 {
+    line-height: 0.2;
+    font-size: 2.1rem;
+    margin: 0;
+    padding: 0;
+  }
   .desc {
     line-height: 1.5;
   }
-  
+  .desc p{
+    font-size: 1rem;
+  }
   .details {
     color: beige;
     text-align: center;
@@ -942,6 +962,6 @@ input:focus, textarea:focus {
   }
   
   .scroller-column {
-    width: 33.33%;
+    width: 100%;
   }
 }
