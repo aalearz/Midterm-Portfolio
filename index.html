@@ -12,6 +12,11 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+        </div>
         <div class="logo">
             <img src="AADESIGNSLOGO.png" alt="Logo" width="100">
         </div>
@@ -145,5 +150,21 @@
         </div>
     </div>
     
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+          document.querySelector('.nav-list').classList.toggle('active');
+          
+          // Optional: Animate burger menu lines
+          this.querySelectorAll('.line').forEach((line, index) => {
+            if (index === 1) {
+              line.style.opacity = document.querySelector('.nav-list').classList.contains('active') ? '0' : '1';
+            } else {
+              line.style.transform = document.querySelector('.nav-list').classList.contains('active') ? 
+                `rotate(${index === 0 ? '45deg' : '-45deg'}) translate(${index === 0 ? '5px, 5px' : '5px, -6px'})` : 
+                'rotate(0) translate(0)';
+            }
+          });
+        });
+      </script>
 </body>
 </html>
