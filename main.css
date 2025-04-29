@@ -837,6 +837,9 @@ input:focus, textarea:focus {
 .fdesign.half {
   width: 48%;
 }
+.burger-menu{
+  display: none;
+}
 
 @media (max-width: 768px) {
   .tw-column {
@@ -848,3 +851,36 @@ input:focus, textarea:focus {
   }
 }
 
+@media (max-width: 800px) {
+
+  /*Navbar - Burger Menu*/
+  .navbar {
+    margin: 0;
+    padding: 0;
+
+  }
+  .burger-menu{
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  .nav-list{
+    display: none;
+  }
+  .line{
+    margin: 0 auto;
+    width: 50px;
+    height: 20px;
+    color: white;
+  }
+  .name-main{
+    line-height: 0.1;
+}
+.desc {
+    line-height: 0.5;
+}
+.details{
+    color: beige;
+    text-align: center;
+}
+}
